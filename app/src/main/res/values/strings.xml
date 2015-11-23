@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RepasoExamen</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_element">Element</string>
+    <string name="title_activity_adaptador_grid">AdaptadorGrid</string>
+    <string name="title_activity_datos_selecc">DatosSelecc</string>
+</resources>

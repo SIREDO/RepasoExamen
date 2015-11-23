@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.activitats.silvia.repasoexamen.DatosSelecc">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivF"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nombre:"
+        android:id="@+id/tvN"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/ivF"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvNombre"
+        android:layout_alignParentStart="true"
+        android:text="N"
+        android:layout_below="@+id/tvN"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Localidad:"
+        android:id="@+id/tvL"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvNombre"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="L"
+        android:id="@+id/tvLoc"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvL"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Provincia:"
+        android:id="@+id/tvP"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvLoc"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="P"
+        android:id="@+id/tvProv"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvP"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp"
+        android:layout_below="@+id/tvProv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+</RelativeLayout>
