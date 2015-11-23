@@ -79,4 +79,10 @@
         android:layout_below="@+id/tvProv"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="56dp" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spc"
+        android:layout_below="@+id/sp"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

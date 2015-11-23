@@ -8,4 +8,34 @@
         <item>Ratón</item>
         <item>Gato</item>
     </string-array>
+    <string-array name="Colores_Nada">
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="Colores_Elefante">
+        <item>Gris</item>
+        <item>Gris oscuro</item>
+        <item>Marrón</item>
+    </string-array>
+    <string-array name="Colores_Tortuga">
+        <item>Verde</item>
+        <item>Marrón</item>
+        <item>Amarillo</item>
+    </string-array>
+    <string-array name="Colores_Conejo">
+        <item>Blanco</item>
+        <item>Gris</item>
+        <item>Marrón</item>
+    </string-array>
+    <string-array name="Colores_Ratón">
+        <item>Negro</item>
+        <item>Blanco</item>
+        <item>Gris</item>
+    </string-array>
+    <string-array name="Colores_Gato">
+        <item>Naranja</item>
+        <item>Pardo</item>
+        <item>Grisáceo</item>
+    </string-array>
 </resources>

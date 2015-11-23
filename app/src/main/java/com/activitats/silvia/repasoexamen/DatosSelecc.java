@@ -18,9 +18,10 @@ import java.util.Arrays;
 public class DatosSelecc extends Activity {
     private ImageView foto;
     private TextView nombre, n, localidad, l, provincia, p;
-    private Spinner spin;
-    ArrayAdapter<String> adap_anim;
+    private Spinner spin, spincol;
+    ArrayAdapter<String> adap_anim, adap_colores;
     String [] array_animales;
+    ArrayList<String> aco;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +35,7 @@ public class DatosSelecc extends Activity {
         provincia = (TextView) findViewById(R.id.tvP);
         p = (TextView) findViewById(R.id.tvProv);
         spin = (Spinner)findViewById(R.id.sp);
+        spincol= (Spinner)findViewById(R.id.spc);
 
         n.setText(this.getIntent().getExtras().getString("nom"));
         l.setText(this.getIntent().getExtras().getString("loc"));
@@ -51,34 +53,45 @@ public class DatosSelecc extends Activity {
         //pasamos al spinner el adaptador que hemos creado
         spin.setAdapter(adap_anim);
 
+        aco= new ArrayList<String>();
+        adap_colores= new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,aco);
+
         spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-
+                        aco = new ArrayList<String>();
 
                         break;
                     case 1:
-                        Toast.makeText(getApplicationContext(), "Has elegido "+spin.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
+                        aco = new ArrayList<String>( Arrays.asList(getResources().getStringArray(R.array.Colores_Elefante)));
+                        Toast.makeText(getApplicationContext(), "Has elegido "+spin.getSelectedItem().toString()+", ahora elige un color", Toast.LENGTH_LONG).show();
 
                         break;
                     case 2:
-                        Toast.makeText(getApplicationContext(), "Has elegido "+spin.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
+                        aco = new ArrayList<String>( Arrays.asList(getResources().getStringArray(R.array.Colores_Tortuga)));
+                        Toast.makeText(getApplicationContext(), "Has elegido "+spin.getSelectedItem().toString()+", ahora elige un color", Toast.LENGTH_LONG).show();
 
                         break;
                     case 3:
-                        Toast.makeText(getApplicationContext(), "Has elegido "+spin.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
+                        aco = new ArrayList<String>( Arrays.asList(getResources().getStringArray(R.array.Colores_Conejo)));
+                        Toast.makeText(getApplicationContext(), "Has elegido "+spin.getSelectedItem().toString()+", ahora elige un color", Toast.LENGTH_LONG).show();
 
                         break;
                     case 4:
-                        Toast.makeText(getApplicationContext(), "Has elegido "+spin.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
+                        aco = new ArrayList<String>( Arrays.asList(getResources().getStringArray(R.array.Colores_Ratón)));
+                        Toast.makeText(getApplicationContext(), "Has elegido "+spin.getSelectedItem().toString()+", ahora elige un color", Toast.LENGTH_LONG).show();
 
                         break;
                     case 5:
-                        Toast.makeText(getApplicationContext(), "Has elegido "+spin.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
+                        aco = new ArrayList<String>( Arrays.asList(getResources().getStringArray(R.array.Colores_Gato)));
+                        Toast.makeText(getApplicationContext(), "Has elegido "+spin.getSelectedItem().toString()+", ahora elige un color", Toast.LENGTH_LONG).show();
 
                         break;
                 }
+                adap_colores.clear();
+                adap_colores.addAll(aco);
+                spincol.setAdapter(adap_colores);
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {

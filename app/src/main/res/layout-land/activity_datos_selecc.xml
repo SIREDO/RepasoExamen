@@ -12,13 +12,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Nombre:"
         android:id="@+id/tvN"
-        android:layout_marginTop="34dp"
-        android:layout_alignParentStart="true" />
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/sp"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -26,10 +20,9 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/tvNombre"
-        android:layout_alignParentStart="true"
         android:text="N"
         android:layout_below="@+id/tvN"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,19 +30,17 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Localidad:"
         android:id="@+id/tvL"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvNombre"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentStart="true" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="L"
         android:id="@+id/tvLoc"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvL"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,9 +48,8 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Provincia:"
         android:id="@+id/tvP"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvLoc"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,4 +60,18 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tvP"
         android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp"
+        android:layout_below="@+id/tvProv"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
